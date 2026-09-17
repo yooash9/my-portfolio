@@ -1,0 +1,47 @@
+:root {
+    --primary: #2563eb;
+    --dark: #0f172a;
+    --light: #f8fafc;
+    --gray: #64748b;
+    --border: #e2e8f0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, sans-serif; }
+body { background: var(--light); color: var(--dark); line-height: 1.6; }
+section { padding: 80px 10%; border-bottom: 1px solid var(--border); }
+h2 { font-size: 2.2rem; margin-bottom: 30px; text-align: center; }
+
+/* Navigation */
+nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 10%; background: #fff; position: sticky; top: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); z-index: 100; }
+nav ul { display: flex; list-style: none; gap: 20px; }
+nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
+nav a:hover { color: var(--primary); }
+
+/* Layout Components */
+.hero { display: flex; align-items: center; height: 80vh; background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); }
+.highlight { color: var(--primary); }
+.btn { display: inline-block; padding: 12px 24px; background: var(--primary); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; border: none; cursor: pointer; }
+.btn.secondary { background: var(--gray); margin-left: 10px; }
+.about-grid, .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+.card { background: #fff; padding: 25px; border-radius: 8px; border: 1px solid var(--border); }
+.link { color: var(--primary); font-weight: 600; text-decoration: none; display: inline-block; margin-top: 15px; }
+
+/* Resume & QR Flexbox */
+.resume-container { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 40px; background: #fff; padding: 40px; border-radius: 8px; border: 1px solid var(--border); }
+.qr-box { display: flex; flex-direction: column; align-items: center; gap: 15px; }
+
+/* Contact Form Formats */
+form { max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; }
+form input, form textarea { width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 1rem; }
+
+/* Floating Chatbot Widget UI */
+.chat-widget { position: fixed; bottom: 20px; right: 20px; width: 320px; background: #fff; border: 1px solid var(--border); border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 1000; overflow: hidden; }
+.chat-header { background: var(--primary); color: #fff; padding: 15px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; }
+.chat-body { display: none; height: 350px; flex-direction: column; }
+.chat-logs { flex: 1; padding: 15px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem; }
+.msg { padding: 8px 12px; border-radius: 8px; max-width: 80%; }
+.msg.bot { background: #f1f5f9; align-self: flex-start; }
+.msg.user { background: var(--primary); color: #fff; align-self: flex-end; }
+.chat-input-area { border-top: 1px solid var(--border); display: flex; }
+.chat-input-area input { flex: 1; border: none; padding: 12px; outline: none; }
+.chat-input-area button { background: var(--primary); color: #fff; border: none; padding: 0 15px; cursor: pointer; }
