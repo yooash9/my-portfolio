@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Professional Portfolio</title>
+    <title>Ashton Shaw - Professional Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <!-- QRCode.js Library for dynamic offline generation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cloudflare.com"></script>
 </head>
 <body>
 
     <!-- Navigation -->
     <nav>
-        <div class="logo">Portfolio.</div>
+        <div class="logo">Ashton Shaw.</div>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -25,44 +25,49 @@
     <!-- Home Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Hi, I'm Ashton Shaw<span class="highlight">[Your Name]</span></h1>
-            <p>Welcome to my professional space. Feel free to browse around at my experiences and interact with the chatbox!.</p>
+            <h1>Hi, I'm <span class="highlight">Ashton Shaw</span></h1>
+            <p>Computer Technology Major at Bowie State University. Specialized in programming, system support, and developing technology-driven backend solutions.</p>
             <a href="#projects" class="btn">View My Work</a>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
-        <h2>About Me</h2>
+        <h2>About Me & Skills</h2>
         <div class="about-grid">
             <div>
-                <h3>Skills</h3>
-                <p>HTML5, CSS3, JavaScript, Git & GitHub, Responsive UI Design.</p>
+                <h3>Technical Skills</h3>
+                <p><strong>Languages:</strong> Python, C, Arduino-based solutions, SQL.</p>
+                <p><strong>Environments & Tech:</strong> Linux, Windows, VMware, Cybersecurity Fundamentals, Data Analytics, Technical Troubleshooting.</p>
             </div>
             <div>
-                <h3>Experience</h3>
-                <p>Developing functional front-end layouts, managing project lifecycles, and writing structured, clean code.</p>
+                <h3>Core Strengths</h3>
+                <p>Client & Server configuration, Problem Solving, Project Management, Strong Communication, Collaboration, Leadership, Flexibility & Adaptability.</p>
             </div>
             <div>
                 <h3>Education</h3>
-                <p>B.S. in Computer Computer Technology</p>
+                <p><strong>Bachelor of Science in Computer Technology</strong><br>Bowie State University, Bowie, MD<br><em>Anticipated Graduation: 2026</em></p>
+                <p><strong>High School Diploma</strong><br>Arundel High School, Crofton, MD<br><em>Graduated: 2022</em></p>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects & Technical Experience Section -->
     <section id="projects">
-        <h2>Featured Projects</h2>
+        <h2>Technical Experience & Projects</h2>
         <div class="project-grid">
             <div class="card">
-                <h3>Portfolio Source Code</h3>
-                <p>The code repository for this clean, modular website and embedded automated chatbot.</p>
-                <a href="https://github.com/yourusername/portfolio-repo" target="_blank" class="link">View GitHub →</a>
+                <h3>Academic Project: Arduino Backend Sensor</h3>
+                <p>Programmed a backend sensor using an Arduino board for a simulated Tesla system. Integrated hardware and software components to collect, process, and debug sensor data to ensure flawless system functionality.</p>
+                <a href="https://github.com" target="_blank" class="link">View Portfolio Repository →</a>
             </div>
             <div class="card">
-                <h3>Additional Project Title</h3>
-                <p>Brief 1-2 sentence description explaining the stack used and problems solved by this application.</p>
-                <a href="https://github.com/yourusername/other-repo" target="_blank" class="link">View GitHub →</a>
+                <h3>IT Technician / Technical Support (Event-Based)</h3>
+                <p>Provided on-site technical assistance at the AAC&U STEM Education Conference in Arlington, VA. Diagnosed network connectivity issues, handled hardware/software setup, and minimized event downtime.</p>
+            </div>
+            <div class="card">
+                <h3>Deloitte AI Institution Internship</h3>
+                <p>Learned industry-standard methods to sort and query databases using SQL, programmed code in Python, and mastered the fundamental building blocks of machine learning architectures.</p>
             </div>
         </div>
     </section>
@@ -72,8 +77,7 @@
         <h2>Resume & Access</h2>
         <div class="resume-container">
             <div class="resume-actions">
-                <p>Review my complete background history, technical credentials, and career achievements.</p>
-                <!-- Remember to place your real PDF inside an assets folder -->
+                <p>Review my complete background history, coursework (including Cybersecurity, Client Operating Systems, Unix, PC Architecture, and Computer Networking), and non-technical work history.</p>
                 <a href="assets/resume.pdf" download class="btn">📥 Download PDF Resume</a>
                 <a href="assets/resume.pdf" target="_blank" class="btn secondary">👁️ View in Browser</a>
             </div>
@@ -88,7 +92,9 @@
     <section id="contact">
         <h2>Get In Touch</h2>
         <form id="contactForm">
-            <input type="text" placeholder="Your Name" required>
+            <input type="text" value="Ashton Shaw" readonly style="background: #f1f5f9; color: #64748b;">
+            <input type="email" value="Ashtonshaw09@gmail.com" readonly style="background: #f1f5f9; color: #64748b;">
+            <input type="text" placeholder="Your Name (Visitor Name)" required>
             <input type="email" placeholder="Your Email Address" required>
             <textarea placeholder="Your Message..." rows="5" required></textarea>
             <button type="submit" class="btn">Send Message</button>
@@ -98,12 +104,12 @@
     <!-- Floating Chatbot Interface -->
     <div class="chat-widget" id="chatWidget">
         <div class="chat-header" onclick="toggleChat()">
-            <span>💬 Portfolio Assistant</span>
+            <span>💬 Ashton's Portfolio Assistant</span>
             <span id="toggleIcon">▲</span>
         </div>
         <div class="chat-body" id="chatBody">
             <div class="chat-logs" id="chatLogs">
-                <div class="msg bot">Hi! Ask me something about skills, experience, or projects.</div>
+                <div class="msg bot">Hi! I am Ashton's automated assistant. Ask me about his 'skills', 'experience', 'education', or 'projects'!</div>
             </div>
             <div class="chat-input-area">
                 <input type="text" id="chatInput" placeholder="Type 'skills', 'projects'...">
@@ -115,3 +121,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
